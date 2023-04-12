@@ -1,0 +1,684 @@
+/* POLICE */
+
+@font-face {
+  font-family: "Raleway";
+  src: url("Raleway/Raleway-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Raleway-bold";
+  src: url("Raleway/static/Raleway-Bold.ttf");
+}
+
+body {
+  font-family: "Raleway";
+  padding: 0px 30px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+ul {
+  padding: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway-bold";
+}
+
+/* END POLICE */
+
+/* HEADER */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header figure {
+  display: flex;
+  width: 61.09px;
+  height: 19px;
+  margin-left: 0;
+  margin-top: 35px;
+}
+
+nav {
+  display: flex;
+}
+
+nav a:hover {
+  color: #0065fc;
+  border-top: 2px #0065fc solid;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  padding: 44px 10px 0px 10px;
+  border-top: 2px transparent solid;
+}
+
+.text {
+  padding-bottom: 20px;
+}
+
+/* FORMULAIRE */
+
+#form {
+  height: 49px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+}
+
+#icon-loc {
+  padding: 1rem 1.25rem;
+  position: relative;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px 0px 0px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+  z-index: 10;
+}
+
+#icon-loc i {
+  color: black;
+}
+
+#city {
+  border-right: none;
+  border-left: none;
+  border-top: #f2f2f2 1px solid;
+  border-bottom: #f2f2f2 1px solid;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  width: 14rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Raleway", "Sans serif";
+}
+
+.responsive_search {
+  width: 132px;
+  background-color: #0065fc;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  padding: 0 1.5rem;
+  font-family: "Raleway", "Sans serif";
+  font-size: 1rem;
+  cursor: pointer;
+}
+@media (min-width: 769px) {
+  #submit_city_mobile {
+    display: none;
+  }
+}
+
+.recherche {
+  display: flex;
+  flex-direction: row;
+  width: 444px;
+  height: 77px;
+}
+
+.fa-location {
+  color: #000;
+  width: 50px;
+  height: 49px;
+}
+
+/* FILTRES ET TEXTE INFO */
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.filterTitle {
+  display: flex;
+  font-size: larger;
+  font-weight: bold;
+  align-items: center;
+  margin-right: 30px;
+}
+.cardButton {
+  display: flex;
+}
+
+.cardButton :hover {
+  text-decoration: none;
+  background-color: #deebff;
+}
+
+.button {
+  background: #ffffff;
+  border: 2px solid #d9d9d9;
+  border-radius: 25px;
+  height: 50px;
+  padding: 0 1rem;
+  font-weight: 700;
+  line-height: 19.96px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.icon_filter {
+  font-size: 22px;
+  margin-right: 1em;
+}
+
+.infoSymbol {
+  border: 2px rgba(128, 128, 128, 0.47) solid;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.info {
+  padding: 40px 0px;
+}
+
+/* ***** END HEADER ***** */
+
+/* ****** BLOCK HEBERGEMENT ****** */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+strong {
+  font-family: "Raleway-bold";
+}
+.fa-solid {
+  color: #0065fc;
+}
+
+/* *** PREMIER BLOCK *** */
+
+.blocHebergement {
+  width: 68%;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2%;
+}
+.blocHebergement a:hover {
+  text-decoration: none;
+}
+.textsup {
+  padding: 0 3%;
+}
+
+.stars {
+  bottom: 0;
+}
+
+.blocHebergement a {
+  color: black;
+  text-decoration: none;
+}
+
+.article_hebergement {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-evenly;
+}
+
+.article_hebergement a {
+  width: 30%;
+}
+
+.blocHebergement h2 {
+  padding-left: 30px;
+}
+
+.cardHotel {
+  background-color: #ffffff;
+  width: 100%;
+  height: 199px;
+  border-radius: 10%;
+  border: 5px solid #ffffff;
+  margin: 15px 0px;
+
+  box-shadow: 0 0 16px #0000002e;
+}
+
+.li_title {
+  font-family: "Raleway-bold";
+}
+
+.imageHebergement {
+  width: 100%;
+  height: 124px;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
+.blocHebergement p {
+  margin: 0;
+  padding: 2px;
+}
+/* LES PLUS POPULAIRES */
+
+.blocPopulaire {
+  width: 26%;
+  display: flex;
+  /* justify-content: space-around; */
+  flex-direction: column;
+  background: #f2f2f2;
+  border-radius: 20px;
+  align-items: center;
+  padding: 0 2%;
+}
+
+.starsPopulaire {
+  position: absolute;
+  margin: 0;
+  bottom: 5px;
+}
+.blocPopulaire a:hover {
+  text-decoration: none;
+}
+.graphSymbol {
+  font-size: 1.5em;
+}
+
+.blocPopulaire a {
+  color: #000;
+  text-decoration: none;
+}
+
+.asideTitle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textPopulaire {
+  padding-left: 5px;
+}
+
+.cardPopulaire {
+  height: 140px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  box-shadow: 0 0 16px #0000002e;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 3px;
+}
+
+.imagePopulaire {
+  width: 35%;
+  border-radius: 20px 0px 0px 20px;
+  object-fit: cover;
+}
+
+/* END  LES PLUS POPULAIRES */
+
+/********   ACTIVITÉS  *******/
+
+.blocActivite {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.activiteMarseille {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.imageActivite {
+  width: 100%;
+  height: 384px;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0px 6px 6px #f2f2f2;
+  object-fit: cover;
+}
+
+.cardActivite {
+  width: 22%;
+  height: 444.51px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-content: space-around;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 6px 6px #f2f2f2;
+}
+
+.cardActivite h4 {
+  padding-left: 1.5em;
+}
+
+/* *** END ACTIVITÉS *** */
+
+/* *** FOOTER *** */
+
+.footer {
+  max-width: 100%;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: space-evenly;
+}
+
+#container_footer {
+  margin-left: 100px;
+}
+
+.listFooter {
+  list-style-type: none;
+  text-align: left;
+  /* margin-right: 200px; */
+  width: 30%;
+}
+
+.footer strong {
+  font-family: Raleway-Bold;
+  padding: 10px;
+}
+
+.listFooter li {
+  padding: 10px;
+}
+
+/* END FOOTER */
+
+/* ICONES /*
+
+ Graphique =<i class="fa-solid fa-chart-line"></i>
+ Billet =<i class="fa-solid fa-money-bill-wave"></i>
+ Coeur =<i class="fa-solid fa-heart"></i>
+ Etoile =<i class="fa-solid fa-star"></i>
+ Chien =<i class="fa-solid fa-dog"></i>
+ Info =<i class="fa-solid fa-info"></i>
+ Personne =<i class="fa-solid fa-person"></i>
+ Loupe =<i class="fa-solid fa-magnifying-glass"></i>
+ */
+
+@media (max-width: 991px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .blocHebergement {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .blocPopulaire {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .asideTitle {
+    width: 35%;
+  }
+  .populaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  .blocPopulaire a {
+    color: #000;
+    text-decoration: none;
+    width: 30%;
+  }
+
+  .cardPopulaire {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .textPopulaire {
+    width: 65%;
+  }
+  .imagePopulaire {
+    width: 35%;
+  }
+
+  .footer {
+    justify-content: space-between;
+  }
+}
+
+@media all and (max-width: 768px) {
+  body {
+    padding: 0px 0px;
+    width: 100%;
+  }
+  /* HEAD */
+
+  header figure {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-top: 35px;
+    justify-content: center;
+    margin: 30px 30px 0px 30px;
+  }
+
+  header figure img {
+    width: 61.09px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    width: 100%;
+    border-bottom: 2px #f2f2f2 solid;
+  }
+
+  nav a {
+    padding-bottom: 30px;
+    width: 50%;
+    text-align: center;
+  }
+
+  nav a:hover {
+    border-bottom: 2px #0065fc solid;
+    border-top: 0px;
+  }
+
+  h1 {
+    padding-top: 40px;
+    font-size: 27px;
+  }
+
+  .text {
+    font-size: medium;
+  }
+
+  /* BOUTONS */
+
+  .filter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardButton {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .button {
+    width: 49%;
+    margin-bottom: 20px;
+    margin-right: 2px;
+    font-size: small;
+  }
+
+  /* FILTRES */
+
+  .filterTitle {
+    margin-bottom: 20px;
+  }
+  .filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+
+  .info {
+    font-size: larger;
+  }
+
+  /* CONTAINER */
+  .container {
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+
+  /* HÉBERGEMENTS */
+
+  .blocHebergement {
+    background-color: #ffffff;
+    width: 100%;
+  }
+
+  .article_hebergement {
+    padding: 0px 15px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .stars {
+    position: initial;
+    bottom: 0;
+  }
+
+  .article_hebergement a {
+    width: 100%;
+  }
+
+  .cardHotel {
+    width: 95%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0px 6px 6px #f2f2f2;
+  }
+
+  /* POPULAIRE*/
+
+  .blocPopulaire {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0%;
+  }
+  .blocPopulaire a {
+    color: #000;
+    text-decoration: none;
+    width: 90%;
+  }
+  .populaire {
+    flex-direction: column;
+    width: 100%;
+  }
+  .cardPopulaire {
+    width: auto;
+  }
+  .asideTitle {
+    width: 90%;
+  }
+
+  /* ACTIVITÉS */
+
+  .blocActivite {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+  }
+
+  .activiteMarseille {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 50px;
+  }
+
+  .imageActivite {
+    height: 190px;
+    object-fit: cover;
+  }
+
+  .cardActivite {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .titleActivite {
+    font-size: larger;
+  }
+  /* FOOTER */
+  .footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+  }
+
+  .navbar {
+    width: 100%;
+    top: 0px;
+    right: 0px;
+  }
+
+  .blockHeader {
+    padding: 0px 15px;
+  }
+
+  .listFooter {
+    padding: 0 15px;
+  }
+
+  #submit_city_desk {
+    display: none;
+  }
+
+  #submit_city_mobile {
+    width: 49px;
+    padding: 0;
+  }
+
+  .recherche {
+    width: 100%;
+  }
+
+  .listFooter {
+    margin-right: 0;
+  }
+  .listFooter {
+    margin-right: 0;
+    width: auto;
+  }
+}
